@@ -11,17 +11,17 @@ const nlu = new NaturalLanguageUnderstandingV1({
     serviceUrl: 'https://api.us-south.natural-language-understanding.watson.cloud.ibm.com'
 });
 
+const state = require('./state.js')
 
-
-
-async function robot(content) {
+async function robot() {
+    const content = state.load();
     await fetchContentFromWikipedia(content)
     sanitizeContent(content)
     breakContentIntoSentences(content)
     limitMaximumSentences(content)
     await fetchKeywordOfAllSentences(content)
+    state.save(content);
 }
-
 
 async function fetchContentFromWikipedia(content) {
     await wiki({ apiUrl: 'https://pt.wikipedia.org/w/api.php' }).page(content.searchTerm).then(async (page) => {
