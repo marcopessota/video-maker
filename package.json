@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/marcopessota/video-maker#readme",
   "dependencies": {
+    "ibm-watson": "^7.0.0",
     "readline-sync": "^1.4.9",
     "sbd": "^1.0.19",
     "wikijs": "^6.3.3"
