@@ -19,6 +19,7 @@
   "dependencies": {
     "googleapis": "^100.0.0",
     "ibm-watson": "^7.0.0",
+    "image-downloader": "^4.3.0",
     "readline-sync": "^1.4.9",
     "sbd": "^1.0.19",
     "wikijs": "^6.3.3"
