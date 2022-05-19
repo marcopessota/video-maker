@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/marcopessota/video-maker#readme",
   "dependencies": {
+    "gm": "^1.23.1",
     "googleapis": "^100.0.0",
     "ibm-watson": "^7.0.0",
     "image-downloader": "^4.3.0",
