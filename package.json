@@ -17,12 +17,17 @@
   },
   "homepage": "https://github.com/marcopessota/video-maker#readme",
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@ffprobe-installer/ffprobe": "^1.4.1",
+    "ffmpeg-installer": "^1.0.2",
+    "fluent-ffmpeg": "^2.1.2",
     "gm": "^1.23.1",
     "googleapis": "^100.0.0",
     "ibm-watson": "^7.0.0",
     "image-downloader": "^4.3.0",
     "readline-sync": "^1.4.9",
     "sbd": "^1.0.19",
+    "videoshow": "^0.1.12",
     "wikijs": "^6.3.3"
   }
 }

@@ -24,7 +24,7 @@ async function robot() {
 }
 
 async function fetchContentFromWikipedia(content) {
-    await wiki({ apiUrl: 'https://pt.wikipedia.org/w/api.php' }).page(content.searchTerm).then(async (page) => {
+    await wiki({ apiUrl: 'https://de.wikipedia.org/w/api.php' }).page(content.searchTerm).then(async (page) => {
 
         await page.content().then(async (texts) => {
             const mergedTexts = await mergeTexts(texts)
